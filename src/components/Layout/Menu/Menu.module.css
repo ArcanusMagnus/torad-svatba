@@ -1,0 +1,54 @@
+.menu {
+  display: flex;
+  list-style: none;
+  height: fit-content;
+}
+
+.menu li {
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.mobileMenu {
+  width: 100%;
+  margin-top: 5rem;
+  padding-inline-start: 0;
+  position: fixed;
+  z-index: 20;
+  background-color: #e6e7e8;
+  flex-wrap: wrap;
+  display: flex;
+  /* height: 0; */
+  top: -1000px;
+  animation: closeMenu 400ms ease-in;
+}
+
+.mobileMenu li {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.mobileMenu.active {
+  top: 0;
+  height: fit-content;
+  animation: openMenu 400ms ease-out;
+}
+
+@keyframes openMenu {
+  from{
+    top: -1000px;
+  }
+  to{
+    top: 0;
+  }
+}
+
+@keyframes closeMenu {
+  from{
+    top: 0px;
+  }
+  to{
+    top: -1000px;
+  }
+}

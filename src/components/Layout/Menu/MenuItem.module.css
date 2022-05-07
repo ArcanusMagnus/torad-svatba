@@ -1,0 +1,34 @@
+.menuItem {
+    display: inline-flex;
+    justify-content: center;
+    margin: 0 1.5rem;
+    font-size: 1.4rem;
+  }
+
+  .menuItem a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .menuItem a {
+    color: inherit;
+    transition: all;
+    transition-duration: 150ms;
+  }
+  
+  .menuItem a:active,
+  .menuItem a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .menuItem-active{
+    font-weight: bold;
+    transform: scale(1.1);
+  }
+  
+  @media screen and (max-width: 1600px) {
+    .menuItem{
+      font-size: 1rem;
+    }
+  }

@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from "./components/Content/Home";
+import Header from "./components/Layout/Header";
 
-function App() {
+import cog_wheel from "./assets/images/float/cog-wheel.png";
+import atom from "./assets/images/float/atom.png";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <img src={cog_wheel} alt="Cog wheel" id="cogwheel" />
+      <img src={atom} alt="Atom" id="atom" />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </>
   );
 }
 
