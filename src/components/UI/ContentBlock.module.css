@@ -1,0 +1,100 @@
+.content-block {
+  margin: 0 auto;
+  color: #003f5d;
+  border: 1px solid rgba(0, 103, 153, 0.25);
+  width: 80%;
+  max-width: 1800px;
+  height: fit-content;
+  position: relative;
+  z-index: 40;
+  text-align: left;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-block-right {
+  width: 50%;
+  margin: 0;
+}
+
+.content-block-right {
+  padding: 1rem 3rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.content-block h2 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.content-block p {
+  font-size: 1rem;
+}
+
+.content-block a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: underline 2px;
+}
+
+.content-block a:hover,
+.content-block a:active {
+  cursor: pointer;
+}
+
+.content-block__form {
+  width: 100%;
+  height: fit-content;
+}
+
+.content-block__form iframe {
+  margin-top: 2rem;
+  width: 100%;
+  min-height: 1060px;
+}
+
+@media screen and (max-width: 1365px) {
+  .content-block {
+    flex-flow: column-reverse;
+    margin-top: 3rem;
+  }
+
+  .content-block-right {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .content-block {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .content-block {
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+  .content-block h2 {
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+
+  .content-block p {
+    font-size: 1rem;
+  }
+
+  .buyTickets {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-aspect-ratio: 3/2) {
+  .content-block-right {
+    padding: 1rem;
+  }
+}

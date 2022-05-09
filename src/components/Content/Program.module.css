@@ -1,0 +1,19 @@
+.program table{
+    margin-top: 2rem;
+    font-size: 1.4rem;
+}
+
+.program table td {
+    padding: 0.5rem 0;
+}
+
+.program table tr td:first-child {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 750px) {
+    .program table {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+}

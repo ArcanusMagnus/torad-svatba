@@ -13,6 +13,7 @@ const Menu = (props) => {
   if (props.open) {
     menuType += " " + styles.active;
   }
+  console.log(props.mobileMenu);
   
   return (
     <ul className={menuType}>
@@ -28,7 +29,7 @@ const Menu = (props) => {
       >
         Program
       </MenuItem>
-      <li><img src={menuLogo} alt="Toradovci-svatba logo"/></li>
+      {!props.mobileMenu && <li><img src={menuLogo} alt="Toradovci-svatba logo"/></li>}
       <MenuItem
         link="/dotaznik"
         onMenuClick={menuClickHandler}
@@ -36,7 +37,7 @@ const Menu = (props) => {
         Dotazník
       </MenuItem>
       <MenuItem
-        link="/mapa"
+        link="/kontakt"
         onMenuClick={menuClickHandler}
       >
         Kontakt &amp; informace

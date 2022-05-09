@@ -5,7 +5,8 @@
   position: relative;
   top: 5rem;
   z-index: 15;
-  background-color: #006799;
+  /* background-color: #006799; */
+  background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -13,8 +14,42 @@
   padding: 3rem 0;
 }
 
+#cogwheel {
+  position: absolute;
+  width: 13vw;
+  opacity: 0.5;
+  left: 2rem;
+  top: 2rem;
+  z-index: 30;
+}
+
+#atom {
+  position: absolute;
+  width: 11.5vw;
+  opacity: 0.5;
+  right: 2rem;
+  top: 2rem;
+  z-index: 30;
+}
+
+@media screen and (max-width: 1365px) {
+  .section {
+    justify-content: flex-start;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .section {
     padding: 1.5rem 0;
+  }
+
+  #cogwheel {
+    left: 0;
+    top: 1rem;
+  }
+
+  #atom {
+    right: 0;
+    top: 1rem;
   }
 }

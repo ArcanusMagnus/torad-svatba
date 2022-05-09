@@ -26,9 +26,3 @@
     font-weight: bold;
     transform: scale(1.1);
   }
-  
-  @media screen and (max-width: 1600px) {
-    .menuItem{
-      font-size: 1rem;
-    }
-  }

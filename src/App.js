@@ -1,18 +1,19 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./components/Content/Home";
+import Program from "./components/Content/Program";
+import Dotaznik from "./components/Content/Dotaznik";
+import Kontakt from "./components/Content/Kontakt";
 import Header from "./components/Layout/Header";
-
-import cog_wheel from "./assets/images/float/cog-wheel.png";
-import atom from "./assets/images/float/atom.png";
 
 const App = () => {
   return (
     <>
       <Header />
-      <img src={cog_wheel} alt="Cog wheel" id="cogwheel" />
-      <img src={atom} alt="Atom" id="atom" />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/program" element={<Program />} />
+        <Route path="/dotaznik" element={<Dotaznik />} />
+        <Route path="/kontakt" element={<Kontakt />} />
       </Routes>
     </>
   );

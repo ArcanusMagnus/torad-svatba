@@ -1,3 +1,52 @@
+@font-face {
+  font-family: "chivo";
+  src: url(./assets/fonts/Chivo-Bold.ttf);
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "chivo";
+  src: url(./assets/fonts/Chivo-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "chivo";
+  src: url(./assets/fonts/Chivo-Black.ttf);
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: "chivo";
+  src: url(./assets/fonts/Chivo-BlackItalic.ttf);
+  font-weight: bolder;
+  font-style: italic;
+}
+@font-face {
+  font-family: "chivo";
+  src: url(./assets/fonts/Chivo-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "chivo";
+  src: url(./assets/fonts/Chivo-Light.ttf);
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: "chivo";
+  src: url(./assets/fonts/Chivo-Italic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "chivo";
+  src: url(./assets/fonts/Chivo-LightItalic.ttf);
+  font-weight: lighter;
+  font-style: italic;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,33 +57,16 @@ html {
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: chivo, -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #006799;
+  /* background-color: #006799; */
+  background-color: #ffffff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-
-#cogwheel {
-  position: absolute;
-  /* width: 250px; */
-  opacity: 0.7;
-  left: 2rem;
-  top: 2rem;
-  z-index: 30;
-}
-
-#atom {
-  position: absolute;
-  /* width: 220px; */
-  opacity: 0.7;
-  right: 2rem;
-  top: 2rem;
-  z-index: 30;
 }

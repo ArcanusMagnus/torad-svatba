@@ -32,12 +32,12 @@ const Header = (props) => {
   return (
     <>
       <header className={styles.header}>
-        {width < 1350 && burger}
-        {width >= 1350 && (
+        {width < 950 && burger}
+        {width >= 950 && (
           <Menu onMenuClick={menuClickHandler} mobileMenu={false} />
         )}
       </header>
-      {width < 1350 && (
+      {width < 950 && (
         <Menu onMenuClick={menuClickHandler} mobileMenu={true} open={burgerActive} />
       )}
     </>

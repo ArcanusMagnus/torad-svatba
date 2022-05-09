@@ -1,24 +1,29 @@
-import mlyn from "../../assets/images/atmo/mlyn.jpg"
-import mlyn_square from "../../assets/images/atmo/mlyn-square.jpg"
+import useScreenResolution from "../../hooks/use-resolution";
+import styles from "./AtmoPhoto.module.css";
 
-import styles from './AtmoPhoto.module.css';
-
-const AtmoPhoto = props => {
-    const photos = [mlyn];
-    const squares = [mlyn_square];
-    const selector = Math.floor(Math.random() * 1);
-
-    const image = photos[selector];
-    const square = squares[selector];
-    
-    return <>
-    <div className={props.wideClass || styles.hidden}>
-          <img src={image} alt="" />
-        </div>
-        <div className={props.squareClass}>
-          <img src={square} alt="" />
-        </div>
+const AtmoPhoto = (props) => {
+  const width = useScreenResolution().width;
+  const content = props.iframe ? (
+    <div className={styles.container}>
+      <iframe
+        title="mapa"
+        src={props.iframe}
+        frameBorder="0"
+      ></iframe>
+    </div>
+  ) : (
+    <img src={width > 1720 ? props.image : props.square} alt="" />
+  );
+  return (
+    <>
+      <div className={styles[props.wideClass] || styles.hidden}>
+        {content}
+      </div>
+      <div className={styles[props.squareClass]}>
+        {content}
+      </div>
     </>
-}
+  );
+};
 
 export default AtmoPhoto;
