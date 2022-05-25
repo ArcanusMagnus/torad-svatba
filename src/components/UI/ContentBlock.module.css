@@ -49,10 +49,19 @@
   height: fit-content;
 }
 
+/* Hardcoded stuff bellow needs to be restructuralized */
+
 .content-block__form iframe {
   margin-top: 2rem;
   width: 100%;
   min-height: 1060px;
+}
+
+@media screen and (max-width: 1900px) {
+  .content-block h2 {
+    font-size: 1.6rem
+  }
+  
 }
 
 @media screen and (max-width: 1365px) {

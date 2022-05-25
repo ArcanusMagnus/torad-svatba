@@ -8,9 +8,9 @@ const Dotaznik = (props) => {
         <iframe
           title="rsvp"
           src="https://docs.google.com/forms/d/e/1FAIpQLSfAx8yNGWvhqFultyGhPkPl8AY1ND_cokziEcL0ppYle7pkVg/viewform?embedded=true"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
         >
         </iframe>
       </ContentBlock>

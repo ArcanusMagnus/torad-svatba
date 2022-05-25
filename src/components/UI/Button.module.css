@@ -1,7 +1,7 @@
 .button {
     cursor: pointer;
     color: #ffcd58;
-    background-color: black;
+    background-color: rgb(204, 225, 235);
     border: none;
     padding: 0.5rem 2rem;
     text-align: left;
