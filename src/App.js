@@ -7,6 +7,7 @@ import LangProvider from "./store/LangProvider";
 import LoadingSpinner from "./components/UI/LoadingSpinner";
 import Section from "./components/UI/Section";
 import ContentBlock from "./components/UI/ContentBlock";
+import Author from "./components/Layout/Author";
 
 const Home = React.lazy(() => import("./components/Content/Home"));
 const Program = React.lazy(() => import("./components/Content/Program"));
@@ -84,6 +85,7 @@ const App = () => {
           }
         />
       </Routes>
+      <Author />
     </LangProvider>
   );
 };

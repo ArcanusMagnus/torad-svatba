@@ -44,27 +44,27 @@ const Home = (props) => {
     body = (
       <>
         <p>
-          Po długim rozmyślaniu, dwóch podwójnie ślepych próbach i jednej
+          Po długim rozmyślaniu, dwóch double-blind próbach i jednej
           wieloprzestrzennej analizie, doszliśmy do wniosku, że chcemy resztę
-          naszego życia spędzić razem. A po następnym eksperymentalnym badaniu
-          problematyki, postanowiliśmy, że się pobierzemy.
+          naszego życia spędzić razem. A po kolejnym eksperymentalnym badaniu
+          problematyki postanowiliśmy, że się pobierzemy.
         </p>
         <p>
           To, co miało początek na LAN imprezie, w której ani jeden z badanych
-          subiektów nie miał brać udziału, będzie ukończone i delegowane dalej w
-          przyszłość w Młynie na Dobré vodě. Ponieważ grupa kontrolna nigdy nie
+          obiektów nie miał brać udziału, będzie dokończone i wysłane dalej w
+          przyszłość w Mlýn na Dobré vodě. Ponieważ grupa kontrolna nigdy nie
           jest wystarczająco duża, będziemy bardzo szczęśliwi, jeśli udzielicie
-          nam swego wsparcie uczestnicząc w kontynuacji tego eksperymentu.
+          nam swego wsparcia uczestnicząc w kontynuacji tego eksperymentu.
         </p>
         <p>
-          W ramach przygotowania skryptów ewaluacyjnych, konieczne jest zbiór
-          danych, na podstawie których będzie zaprojektowana metodyka a to
-          będzie możliwe dopiero po wypełnieniu R.S.V.P. Dlatego wszystkich was
-          prosimy, o wypełnienie zakładki R.S.V.P.
+          W ramach przygotowania skryptów ewaluacyjnych, konieczne jest
+          utworzenie zbioru danych, na podstawie których będzie zaprojektowana
+          metodyka badań, a to będzie możliwe dopiero po wypełnieniu zakładki
+          R.S.V.P. Dlatego wszystkich Was prosimy, o jej wypełnienie.
         </p>
         <p>
           W przypadku niepewności danych wejściowych lub niejasnych kryteriów
-          badania, nie wahaj się skontaktować odpowiedzialnych autorów.
+          badania, nie wahaj się zapytać autorów.
         </p>
       </>
     );

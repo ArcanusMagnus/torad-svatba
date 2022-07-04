@@ -5,6 +5,7 @@ import ContentBlock from "../UI/ContentBlock";
 import LangContext from "../../store/lang-context";
 
 import image from "../../assets/images/atmo/couple.jpg";
+import pallette from "../../assets/images/colors.jpg";
 import square from "../../assets/images/atmo/couple-square.jpg";
 
 const Kontakt = (props) => {
@@ -23,6 +24,11 @@ const Kontakt = (props) => {
         Prosíme, nekupujte nám svatební dary, budeme však rádi, když nám
         přispějete na organizaci svatby.
       </p>
+      <p>
+        Při volbě šatů a doplňků se, prosíme, držte níže přiložené barevné
+        palety.
+      </p>
+      <img src={pallette} alt="Barevná paleta" />
       <p>
         Parkování přímo u Mlýna je omezené, doporučujeme parkování na sídlišti,
         které je 150 metrů od Mlýna.
@@ -44,8 +50,14 @@ const Kontakt = (props) => {
           jeśli nam pomożecie z finansowaniem przyjęcia.
         </p>
         <p>
+          Przy wyborze sukienek i dodatków prosimy kierować się paletą kolorów
+          załączoną poniżej.
+        </p>
+        <img src={pallette} alt="Barevná paleta" />
+        <p>
           Adres przyjęcia: Mlýn na Dobré vodě, 104 00 Praha-Křeslice
-          <br />W przypadku jakichkolwiek niejasności kontaktujcie nas na tel.:{" "}
+          <br />W przypadku jakichkolwiek niejasności kontaktujcie się z nami
+          pod numerem telefonu.:{" "}
           <a href="tel:+420739655930">+420 739 655 930</a>
         </p>
       </>
